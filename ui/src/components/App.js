@@ -1,9 +1,17 @@
-import React, { Component } from "react";
-import Layout from "./layout/Layout";
+import React, { Component, Fragment } from "react";
+
+import { Header, Footer } from "./layouts";
+import Influencers from "./influencers/Influencers";
 
 class App extends Component {
   render() {
-    return <Layout />;
+    return (
+      <Fragment>
+        <Header />
+        <Influencers />
+        <Footer />
+      </Fragment>
+    );
   }
 }
 
