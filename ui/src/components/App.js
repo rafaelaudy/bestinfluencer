@@ -1,8 +1,9 @@
-import React, { Component, Fragment } from "react";
+import React, { Component, Fragment, Suspense, lazy } from "react";
 
 import { Header, Footer } from "./layouts";
-import Influencers from "./influencers/Influencers";
 import "./App.css";
+
+const Influencers = lazy(() => import("./influencers/Influencers"));
 
 class App extends Component {
   render() {
@@ -10,7 +11,9 @@ class App extends Component {
       <Fragment>
         <Header />
         <div className="app__content">
-          <Influencers />
+          <Suspense fallback={<div>Loading...</div>}>
+            <Influencers />
+          </Suspense>
         </div>
         <Footer />
       </Fragment>
