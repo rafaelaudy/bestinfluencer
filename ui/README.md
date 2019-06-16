@@ -36,12 +36,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/ad
 ### Deployment
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-## To add
-
-- React Lazy on Routes
-- Transform classes into hooks
-- Add error boundaries
-- Adds redux
-- Audit bundle size
-- Progressive app (https://blog.bitsrc.io/how-to-build-a-react-progressive-web-application-pwa-b5b897df2f0a)
