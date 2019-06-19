@@ -34,7 +34,7 @@ function ButtonAppBar() {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            News
+            Best Influencer - The best way to find the right influencer
           </Typography>
           <Button color="inherit">Login</Button>
         </Toolbar>

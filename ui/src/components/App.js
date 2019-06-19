@@ -1,6 +1,6 @@
 import React, { Component, Fragment, Suspense, lazy } from "react";
 
-import { Header, Footer } from "./layouts";
+import { Header } from "./layouts";
 import "./App.css";
 
 const Influencers = lazy(() => import("./influencers/Influencers"));
@@ -15,7 +15,6 @@ class App extends Component {
             <Influencers />
           </Suspense>
         </div>
-        <Footer />
       </Fragment>
     );
   }
